@@ -27,7 +27,7 @@ Python:
 -  Data cleaning and preparation
 -  Exploratory Descriptive Analysis (EDA)
 -  Recency-Frequency-Monetary (RFM) Analysis
--  Clustering models: LogisticRegression, RandomForest, tree, GaussianNB
+-  Clustering models: LogisticRegression, RandomForest, tree, GaussianNB, KNN
 ## 2. Result
 ### 2.1. Analysis
 #### 2.1.1. Customers
@@ -39,5 +39,10 @@ Python:
   Customers using credit cards account for (70.6%) However, the churn rate for customers using credit cards and not using credit cards is the same (approximately 20%).
   Customers who actively use banking services and customers who do not use them regularly have similar numbers Customers who do not regularly use banking services have a higher churn rate, but this is quite understandable.
 ### 2.2. Learning model
-
-
+| No. | Model | Accuracy | Training Time |
+|-----|-------|----------|---------------|
+| 1 | LogisticRegression | 0.809 | 0.09409451484680176 |
+| 2 | GaussianNB | 0.8293 | 0.005362987518310547 |
+| 3 | Tree | 1.0 | 0.11385297775268555 |
+| 4 | RandomForest | 0.9835 | 0.24330377578735352 |
+| 5 | KNN | 0.879 | 0.13367319107055664 |
